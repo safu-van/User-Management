@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../components/user/Navbar'
-import Home from '../components/user/Home'
+import { Outlet } from 'react-router-dom'
 
 const UserLayout = () => {
   return (
@@ -9,7 +9,7 @@ const UserLayout = () => {
             <Navbar />
         </div>
         <div className='flex items-center justify-center h-[85%] px-28'>
-            <Home />
+            <Outlet />
         </div>
     </div>
   )
