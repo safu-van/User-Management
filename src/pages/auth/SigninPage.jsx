@@ -1,5 +1,5 @@
 import React from "react";
-import SigninCard from "../../components/auth/signin/SigninCard";
+import SigninCard from "../../components/auth/SigninCard";
 
 const SigninPage = () => {
   return (
