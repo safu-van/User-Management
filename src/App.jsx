@@ -4,6 +4,7 @@ import SigninPage from "./pages/auth/SigninPage";
 import SignupPage from "./pages/auth/SignupPage";
 import UserLayout from "./layouts/UserLayout";
 import Home from "./components/user/Home";
+import Profile from "./components/user/Profile";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const App = () => {
         {
           index: true,
           element: <Home />,
+        },
+        {
+          path: "profile",
+          element: <Profile />,
         },
       ],
     },
@@ -27,9 +32,7 @@ const App = () => {
     },
   ]);
 
-  return (
-    <RouterProvider router={router} />
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
