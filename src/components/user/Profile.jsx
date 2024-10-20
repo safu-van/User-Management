@@ -49,14 +49,14 @@ const Profile = () => {
             type="text"
             id="name"
             value="Safuvan"
-            className={`block pl-2 w-full h-10 text-sm text-gray-900 bg-gray-50 rounded-md border-2 focus:outline-none ${
-              edit ? "border-[#556B2F]" : "border-gray-300"
+            className={`block pl-2 w-full h-10 text-sm text-gray-900 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 rounded-md border-2 focus:outline-none ${
+              edit ? "border-[#556B2F]" : "border-gray-300 dark:border-gray-600"
             } peer`}
             readOnly={!edit}
           />
           <label
             htmlFor="name"
-            className="absolute text-sm text-gray-500 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-gray-50 px-2 left-2"
+            className="absolute rounded-full text-sm text-gray-500 dark:text-gray-400 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-gray-50 dark:bg-gray-800 px-2 left-2"
           >
             Name
           </label>
@@ -67,14 +67,14 @@ const Profile = () => {
             type="text"
             id="email"
             value="contactmesafwan@gmail.com"
-            className={`block pl-2 w-full h-10 text-sm text-gray-900 bg-gray-50 rounded-md border-2 focus:outline-none ${
-              edit ? "border-[#556B2F]" : "border-gray-300"
+            className={`block pl-2 w-full h-10 text-sm text-gray-900 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 rounded-md border-2 focus:outline-none ${
+              edit ? "border-[#556B2F]" : "border-gray-300 dark:border-gray-600"
             } peer`}
             readOnly={!edit}
           />
           <label
             htmlFor="email"
-            className="absolute text-sm text-gray-500 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-gray-50 px-2 left-2"
+            className="absolute rounded-full text-sm text-gray-500 dark:text-gray-400 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-gray-50 dark:bg-gray-800 px-2 left-2"
           >
             Email
           </label>
@@ -85,14 +85,14 @@ const Profile = () => {
             type="text"
             id="floating_input"
             value="9188552541"
-            className={`block pl-2 w-full h-10 text-sm text-gray-900 bg-gray-50 rounded-md border-2 focus:outline-none ${
-              edit ? "border-[#556B2F]" : "border-gray-300"
+            className={`block pl-2 w-full h-10 text-sm text-gray-900 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 rounded-md border-2 focus:outline-none ${
+              edit ? "border-[#556B2F]" : "border-gray-300 dark:border-gray-600"
             } peer`}
             readOnly={!edit}
           />
           <label
             htmlFor="floating_input"
-            className="absolute text-sm text-gray-500 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-gray-50 px-2 left-2"
+            className="absolute rounded-full text-sm text-gray-500 dark:text-gray-400 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-gray-50 dark:bg-gray-800 px-2 left-2"
           >
             Phone Number
           </label>
@@ -101,15 +101,15 @@ const Profile = () => {
         <div className="relative mt-4 w-full">
           <textarea
             id="bio"
-            className={`block pl-2 w-full text-sm text-gray-900 p-2 bg-gray-50 rounded-md border-2 focus:outline-none ${
-              edit ? "border-[#556B2F]" : "border-gray-300"
+            className={`block p-2 w-full text-sm text-gray-900 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 rounded-md border-2 focus:outline-none ${
+              edit ? "border-[#556B2F]" : "border-gray-300 dark:border-gray-600"
             } peer`}
             rows="4"
             readOnly={!edit}
           ></textarea>
           <label
             htmlFor="bio"
-            className="absolute text-sm text-gray-500 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-gray-50 px-2 left-2"
+            className="absolute rounded-full text-sm text-gray-500 dark:text-gray-400 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-gray-50 dark:bg-gray-800 px-2 left-2"
           >
             Bio
           </label>
@@ -119,14 +119,17 @@ const Profile = () => {
         {edit ? (
           <>
             <button
-              onClick={() => setEdit(false)}
-              className="w-20 h-8 bg-white rounded-md text-[#556B2F] border-2 border-[#556B2F] lg:hover:bg-[#556B2F] lg:hover:text-white "
+              onClick={() => setEdit(false)}  
+              className="w-20 h-8 bg-gray-100 text-[#556B2F] border-2 border-[#556B2F] rounded-md 
+             lg:hover:bg-[#6a853a] lg:hover:text-white 
+             dark:bg-gray-800 dark:text-white dark:border-[#556B2F] 
+             dark:lg:hover:bg-[#6a853a] dark:lg:hover:text-white"
             >
               Cancel
             </button>
             <button
               onClick={() => setEdit(true)}
-              className="w-24 h-8 bg-[#556B2F] rounded-md text-white border-2 border-[#556B2F] lg:hover:border-[#556B2F] lg:hover:text-[#556B2F] lg:hover:bg-white"
+              className="w-24 h-8 bg-[#556B2F] rounded-md text-white border-2 border-[#556B2F] lg:hover:border-[#556B2F] lg:hover:text-[#556B2F] lg:hover:bg-white dark:bg-[#556B2F] dark:hover:text-white dark:lg:hover:bg-[#6a853a]"
             >
               Update
             </button>
@@ -134,7 +137,7 @@ const Profile = () => {
         ) : (
           <button
             onClick={() => setEdit(true)}
-            className="w-36 h-8 bg-white rounded-md text-[#556B2F] border-2 border-[#556B2F] lg:hover:bg-[#556B2F] lg:hover:text-white"
+            className="w-36 h-8 bg-white rounded-md text-[#556B2F] border-2 border-[#556B2F] lg:hover:bg-[#556B2F] lg:hover:text-white dark:bg-[#556B2F] dark:text-white dark:lg:hover:bg-[#6a853a]"
           >
             Edit Details
           </button>
