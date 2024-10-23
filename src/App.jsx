@@ -5,6 +5,7 @@ import SignupPage from "./pages/auth/SignupPage";
 import UserLayout from "./layouts/UserLayout";
 import Home from "./components/user/Home";
 import Profile from "./components/user/Profile";
+import Dashboard from "./pages/admin/Dashboard";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const App = () => {
           element: <Profile />,
         },
       ],
+    },
+    {
+      path: "/admin",
+      element: <Dashboard />,
     },
     {
       path: "/signin",
