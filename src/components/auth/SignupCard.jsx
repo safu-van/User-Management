@@ -114,7 +114,7 @@ const SignupCard = () => {
                   />
                 </svg>
               </div>
-              <span>Sign in with Google</span>
+              <span>Sign up with Google</span>
             </button>
           </div>
         </div>

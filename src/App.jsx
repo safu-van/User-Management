@@ -6,6 +6,7 @@ import UserLayout from "./layouts/UserLayout";
 import Home from "./components/user/Home";
 import Profile from "./components/user/Profile";
 import Dashboard from "./pages/admin/Dashboard";
+import OtpVerifyPage from "./pages/auth/OtpVerifyPage";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -34,6 +35,10 @@ const App = () => {
     {
       path: "/signup",
       element: <SignupPage />,
+    },
+    {
+      path: "/verify",
+      element: <OtpVerifyPage />,
     },
   ]);
 
