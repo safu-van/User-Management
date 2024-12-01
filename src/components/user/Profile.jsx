@@ -50,7 +50,7 @@ const Profile = () => {
             id="name"
             value="Safuvan"
             className={`block pl-2 w-full h-10 text-sm text-gray-900 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 rounded-md border-2 focus:outline-none cursor-not-allowed ${
-              edit ? "border-[#556B2F] cursor-auto" : "border-gray-300 dark:border-gray-600"
+              edit ? "border-[#556B2F] cursor-text" : "border-gray-300 dark:border-gray-600"
             } peer`}
             readOnly={!edit}
           />
@@ -68,7 +68,7 @@ const Profile = () => {
             id="email"
             value="contactmesafwan@gmail.com"
             className={`block pl-2 w-full h-10 text-sm text-gray-900 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 rounded-md border-2 focus:outline-none cursor-not-allowed ${
-              edit ? "border-[#556B2F] cursor-auto" : "border-gray-300 dark:border-gray-600"
+              edit ? "border-[#556B2F] cursor-text" : "border-gray-300 dark:border-gray-600"
             } peer`}
             readOnly={!edit}
           />
@@ -86,7 +86,7 @@ const Profile = () => {
             id="floating_input"
             value="9188552541"
             className={`block pl-2 w-full h-10 text-sm text-gray-900 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 rounded-md border-2 focus:outline-none cursor-not-allowed ${
-              edit ? "border-[#556B2F] cursor-auto" : "border-gray-300 dark:border-gray-600"
+              edit ? "border-[#556B2F] cursor-text" : "border-gray-300 dark:border-gray-600"
             } peer`}
             readOnly={!edit}
           />
@@ -102,7 +102,7 @@ const Profile = () => {
           <textarea
             id="bio"
             className={`block p-2 w-full text-sm text-gray-900 bg-gray-50 dark:bg-gray-800 dark:text-gray-200 rounded-md border-2 focus:outline-none cursor-not-allowed ${
-              edit ? "border-[#556B2F] cursor-auto" : "border-gray-300 dark:border-gray-600"
+              edit ? "border-[#556B2F] cursor-text" : "border-gray-300 dark:border-gray-600"
             } peer`}
             rows="4"
             readOnly={!edit}
